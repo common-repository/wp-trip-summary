@@ -1,0 +1,289 @@
+/**
+ * Copyright (c) 2014-2024 Alexandru Boia and Contributors
+ *
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ *	1. Redistributions of source code must retain the above copyright notice, 
+ *		this list of conditions and the following disclaimer.
+ *
+ * 	2. Redistributions in binary form must reproduce the above copyright notice, 
+ *		this list of conditions and the following disclaimer in the documentation 
+ *		and/or other materials provided with the distribution.
+ *
+ *	3. Neither the name of the copyright holder nor the names of its contributors 
+ *		may be used to endorse or promote products derived from this software without 
+ *		specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY 
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+/* Adjust bootstrap color scheme */
+
+.abp01-bootstrap {
+	--bs-primary: #2271b1;
+}
+
+.abp01-bootstrap .list-group-item {
+	--bs-list-group-active-bg: #2271b1;
+	--bs-list-group-active-border-color: #2271b1;
+}
+
+.abp01-bootstrap button.btn-primary {
+	--bs-btn-bg: #2271b1;
+	--bs-btn-border-color: #2271b1;
+	--bs-btn-hover-bg: #135e96;
+	--bs-btn-hover-border-color: #135e96;
+}
+
+.abp01-bootstrap .bg-primary {
+	--bs-primary-rgb: 34, 113, 177;
+}
+
+.abp01-bootstrap .modal-backdrop {
+	--bs-backdrop-zindex: 99999;
+	opacity: var(--bs-backdrop-opacity);
+}
+
+.abp01-bootstrap .modal {
+	--bs-modal-zindex: 199999;
+}
+
+/* Basic elements and support classes */
+
+.abp01-status-text {
+	border-radius: 4px;
+	padding: 10px;
+	background-color: #e5e5e5;
+	color: #2e4453;
+}
+
+.abp01-status-ok {
+	background-color: #c6e1c6;
+	color: #5b841b;
+}
+
+.abp01-status-err {
+	background-color: #eba3a3;
+	color: #761919;
+}
+
+.abp01-status-warn {
+	background-color: #f3e9cd;
+	color: #ffba00;
+}
+
+.abp01-stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
+
+.abp01-clear {
+	clear: both;
+	width: 0;
+	height: 0
+}
+
+.abp01-rounded-container {
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	padding: 10px;
+	background-color: #fff;
+}
+
+textarea.abp01-code-reading-area {
+	height: 600px;
+	width: 100%;
+	background-color: #fff;
+	font-family: 'Courier New', Courier, monospace;
+	border: 1px solid #f1f1f1;
+	border-radius: 5px;
+	resize: none;
+}
+
+.abp01-bs-progress-label {
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.abp01-alert-container {
+	margin-bottom: 10px;
+}
+
+/* Admin page - basic structure */
+
+.abp01-page {
+	
+}
+
+.abp01-page h2.abp01-page-title {
+	color: #1d2327;
+  	font-size: 1.3em;
+  	margin: 1em 0;
+	display: block;
+	font-weight: 600;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.abp01-page-sidebar h4, .abp01-page-workspace h4 {
+	font-size: 1.1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f1f1f1;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.abp01-page-sidebar h4 {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.abp01-page-side-bar-content {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.abp01-page-sidebar h5, .abp01-page-workspace h5 {
+	font-size: 1em;
+	padding: 10px;
+	background-color: var(--bs-primary);
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.abp01-page-sidebar h5:first-of-type {
+	margin-top: 0px;
+}
+
+.abp01-page-sidebar h5.error-heading, .abp01-page-workspace h5.error-heading {
+	background-color: var(--bs-danger);
+}
+
+.abp01-page-workspace-toolbar {
+	margin-bottom: 10px;
+}
+
+.abp01-page-workspace-toolbar .btn {
+	font-size: 13px;
+}
+
+.abp01-page-workspace-toolbar .btn .dashicons {
+	font-size: 14px;
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+
+/* Trip summary audit log */
+/* TODO: move to separate file */
+#abp01-trip-summary-audit-log .inside {
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+table.abp01-admin-trip-summary-audit-log {
+	width: 100%;
+	table-layout: fixed;
+}
+
+table.abp01-admin-trip-summary-audit-log h4 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+table.abp01-admin-trip-summary-audit-log th {
+	text-align: left;
+	width: calc(30% - 16px);
+ }
+
+ table.abp01-admin-trip-summary-audit-log td {
+	width: calc(70% - 16px);
+ }
+
+ table.abp01-admin-trip-summary-audit-log th, 
+ table.abp01-admin-trip-summary-audit-log td {
+	padding: 8px;
+	word-wrap: break-word;
+	text-align: left;
+ }
+
+ table.abp01-admin-trip-summary-audit-log tr:nth-child(2n+1) {
+	background-color: #f8f8f8;
+ }
+
+ table.abp01-admin-trip-summary-audit-log tr:hover {
+	background-color: #e14d43;
+	color: #fff;
+}
+
+ 
+table.abp01-admin-trip-summary-audit-log tr.abp01-trip-summary-audit-log-section-title,
+table.abp01-admin-trip-summary-audit-log tr.abp01-trip-summary-audit-log-section-title:nth-child(2n+1),
+table.abp01-admin-trip-summary-audit-log tr.abp01-trip-summary-audit-log-section-title:hover {
+	background-color: #fff;
+	color: rgb(60, 67, 74);
+}
+
+table.abp01-admin-trip-summary-audit-log h4 {
+	padding: 8px;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+@media (min-width: 782px) {
+	/* integrate fix from: https://github.com/WordPress/gutenberg/issues/31165 */
+	.interface-complementary-area {
+		 /* width: 280px; */
+		width: 100%;
+	}
+
+	.is-sidebar-opened .interface-interface-skeleton__sidebar {
+		width: 280px;
+	}
+}
+
+
+/* Deprecated stuff */
+
+.abp01-progress-container {
+	width: 400px;
+	height: 45px;
+}
+
+.abp01-progress-label {
+	width: 400px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.abp01-progress-bar {
+	width: 400px;
+	height: 20px;
+}

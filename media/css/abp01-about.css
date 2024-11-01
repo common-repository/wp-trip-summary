@@ -1,0 +1,90 @@
+/**
+ * Copyright (c) 2014-2024 Alexandru Boia and Contributors
+ *
+ * Redistribution and use in source and binary forms, with or without modification, 
+ * are permitted provided that the following conditions are met:
+ * 
+ *	1. Redistributions of source code must retain the above copyright notice, 
+ *		this list of conditions and the following disclaimer.
+ *
+ * 	2. Redistributions in binary form must reproduce the above copyright notice, 
+ *		this list of conditions and the following disclaimer in the documentation 
+ *		and/or other materials provided with the distribution.
+ *
+ *	3. Neither the name of the copyright holder nor the names of its contributors 
+ *		may be used to endorse or promote products derived from this software without 
+ *		specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY 
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) 
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#abp01-about-logo {
+	float: left;
+	width: 138px;
+	height: 138px;
+}
+
+#abp01-about-logo-inner {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 138px;
+	height: 138px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+#abp01-about-logo img {
+	width: 128px;
+	height: 128px;
+	margin: 5px;
+}
+
+#abp01-about-info {
+	float: left;
+	width: 600px;
+	padding-left: 15px;
+}
+
+#abp01-about-info-listing {
+	border: 0px none;
+	border-radius: 5px;
+	border-spacing: 2px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+#abp01-about-info-listing th {
+	font-weight: 600;
+}
+
+#abp01-about-actions {
+	margin-top: 10px;
+}
+
+#abp01-about-changelog {
+	padding-top: 10px;
+	width: 753px;
+}
+
+.abp01-about-changelog-version {
+	margin-bottom: 10px;
+}
+
+.abp01-about-changelog-version table {
+	border: 0px none;
+	border-radius: 5px;
+	border-spacing: 2px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.abp01-about-changelog-version thead th {
+	font-weight: 600;
+}
